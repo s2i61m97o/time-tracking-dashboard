@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #0e1323;
+  padding: 3rem 0;
+}
+
+#time-tracker {
+  max-width: 90%;
+  margin: auto;
+}
+
+.user-info {
+  border-radius: 1rem;
+  background-color: #1c204b;
+}
+.user-info .user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2rem;
+  border-radius: inherit;
+  background-color: #5747ea;
+}
+.user-info .user img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: 0.2rem #ffffff solid;
+}
+.user-info .user .info {
+  margin-left: 1.5rem;
+}
+.user-info .user .info .report {
+  color: #bbc0ff;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  margin: 0;
+}
+.user-info .user .info .name {
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  font-weight: 300;
+  margin: 0.5rem 0;
+}
+.user-info .timescale {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: #7078c9;
+  letter-spacing: 1px;
+}
+.user-info .active {
+  color: #ffffff;
+}
+
+.activity {
+  width: 100%;
+  border-radius: 1rem;
+  padding-top: 2.5rem;
+  margin: 1.5rem 0;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right 1rem top -0.75rem;
+}
+.activity .content {
+  background-color: #1c204b;
+  color: #ffffff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin: 0;
+  z-index: 10;
+}
+.activity .content .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.activity .content .type {
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  margin: 0;
+}
+.activity .content img {
+  width: 1.5rem;
+  height: 0.5rem;
+}
+.activity .content .data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0 0 0;
+}
+.activity .content .data .hours {
+  font-size: 2rem;
+  line-height: 2.375rem;
+  font-weight: 300;
+  margin: 0;
+}
+.activity .content .data .previous-hours {
+  font-size: 1rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  color: #bbc0ff;
+  margin: 0;
+}
+
+.work {
+  background-color: #ff8b64;
+  background-image: url(/assets/images/icon-work.svg);
+}
+
+.play {
+  background-color: #55c2e6;
+  background-image: url(/assets/images/icon-play.svg);
+}
+
+.study {
+  background-color: #ff5e7d;
+  background-image: url(/assets/images/icon-study.svg);
+}
+
+.exercise {
+  background-color: #4bcf82;
+  background-image: url(/assets/images/icon-exercise.svg);
+}
+
+.social {
+  background-color: #7335d2;
+  background-image: url(/assets/images/icon-social.svg);
+}
+
+.self-care {
+  background-color: #f1c75b;
+  background-image: url(/assets/images/icon-self-care.svg);
+}
+
+.hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

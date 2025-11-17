@@ -1,0 +1,157 @@
+@use "variables" as var;
+@use "mixins" as mx;
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: var.$navy950;
+  padding: 3rem 0;
+}
+
+#time-tracker {
+  max-width: 90%;
+  margin: auto;
+}
+
+.user-info {
+  border-radius: 1rem;
+  background-color: var.$navy900;
+
+  .user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: var.$spacing400;
+    border-radius: inherit;
+    background-color: var.$purple600;
+
+    img {
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 50%;
+      border: 0.2rem var.$white solid;
+    }
+
+    .info {
+      margin-left: var.$spacing300;
+
+      .report {
+        color: var.$navy200;
+        @include mx.txt-prst-6;
+        margin: var.$spacing0;
+      }
+
+      .name {
+        color: var.$white;
+        @include mx.txt-prst-4;
+        margin: var.$spacing100 0;
+      }
+    }
+  }
+
+  .timescale {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    @include mx.txt-prst-5-rg;
+    color: var.$purple500;
+    letter-spacing: 1px;
+  }
+
+  .active {
+    color: var.$white;
+  }
+}
+
+.activity {
+  width: 100%;
+  border-radius: var.$spacing200;
+  padding-top: var.$spacing500;
+  margin: var.$spacing300 0;
+  overflow: hidden;
+
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right 1rem top -0.75rem;
+
+  .content {
+    background-color: var.$navy900;
+    color: var.$white;
+    border-radius: var.$spacing200;
+    padding: var.$spacing300;
+    margin: 0;
+    z-index: 10;
+
+    .title {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center
+    }
+
+    .type {
+      @include mx.txt-prst-5-md;
+      margin: 0;
+    }
+
+    img {
+      width: 1.5rem;
+      height: 0.5rem;
+    }
+
+    .data {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: var.$spacing100 0 0 0;
+
+      .hours {
+        @include mx.txt-prst-3;
+        margin: 0;
+      }
+      .previous-hours {
+        @include mx.txt-prst-6;
+        color: var.$navy200;
+        margin: 0;
+      }
+    }
+  }
+}
+
+// CARD COLOURS AND IMAGES
+.work {
+  background-color: var.$orange;
+  background-image: url(/assets/images/icon-work.svg);
+}
+
+.play {
+    background-color: var.$blue300;
+    background-image: url(/assets/images/icon-play.svg);
+}
+
+.study {
+    background-color: var.$pink400;
+    background-image: url(/assets/images/icon-study.svg);
+}
+
+.exercise {
+    background-color: var.$green400;
+    background-image: url(/assets/images/icon-exercise.svg);
+}
+
+.social {
+    background-color: var.$purple700;
+    background-image: url(/assets/images/icon-social.svg);
+}
+
+.self-care {
+    background-color: var.$yellow300;
+    background-image: url(/assets/images/icon-self-care.svg);
+}
+
+
+.hidden {
+  display: none;
+}
