@@ -2,6 +2,7 @@ const container = document.getElementById("time-tracker-container");
 const timeTrackDataContainer = document.querySelector(".time-track-data");
 const timeScales = document.querySelectorAll(".time");
 
+// Starting Variables
 let activeTimeString = "daily";
 let prevTxt = "Yesterday";
 
