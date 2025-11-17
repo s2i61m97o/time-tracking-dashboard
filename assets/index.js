@@ -63,7 +63,7 @@ function appendItem(item) {
     timeframeTypePara.className = `type`;
     timeframeTypePara.textContent = typeTitle;
     const ellpssImgHtml = document.createElement("img");
-    ellpssImgHtml.src = "./assets/images/icon-ellipsis.svg";
+    ellpssImgHtml.src = "/assets/images/icon-ellipsis.svg";
 
     titleDiv.append(timeframeTypePara, ellpssImgHtml);
 
