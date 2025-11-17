@@ -7,7 +7,7 @@ let activeTimeString = "daily";
 let prevTxt = "Yesterday";
 
 // Fetch the data from the file
-fetch("/data.json")
+fetch("./data.json")
   .then((response) => {
     if (!response.ok) return console.log("Something went wrong fetching JSON");
 
@@ -63,7 +63,7 @@ function appendItem(item) {
     timeframeTypePara.className = `type`;
     timeframeTypePara.textContent = typeTitle;
     const ellpssImgHtml = document.createElement("img");
-    ellpssImgHtml.src = "assets/images/icon-ellipsis.svg";
+    ellpssImgHtml.src = "./assets/images/icon-ellipsis.svg";
 
     titleDiv.append(timeframeTypePara, ellpssImgHtml);
 
